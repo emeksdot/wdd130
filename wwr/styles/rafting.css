@@ -191,3 +191,7 @@ footer a img {
   display: flex;
   justify-content: flex-end;
 }
+
+footer p {
+  color: var(--primary-color);
+}
