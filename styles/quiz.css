@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid goldenrod;
+  padding: 40px 20px;
+  align-content: center;
+  align-self: center;
+  background-color: rgb(247, 244, 244);
+  border-radius: 3px;
+  height: 350px;
+  justify-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1.15rem;
+}
+
+button {
+  background-color: #5c48f7;
+  color: bisque;
+  height: 50px;
+  margin: 25px 0 5px 0;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+input {
+  height: 3rem;
+}
+
+#q3 {
+  height: 2rem;
+}
