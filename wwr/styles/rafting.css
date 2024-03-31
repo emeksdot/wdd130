@@ -147,6 +147,11 @@ main {
   color: #592e83;
   text-align: center;
   padding: 0 20px;
+  top: -15px;
+}
+
+.staff-pic {
+  border: 2px solid var(--primary-color);
 }
 
 .right {
@@ -237,8 +242,12 @@ form {
   align-self: center;
   background-color: rgb(247, 244, 244);
   border-radius: 3px;
-  height: 350px;
+  height: 420px;
   justify-items: flex-start;
+}
+
+form input {
+  align-self: self-end;
 }
 
 .form-container-1 {
@@ -297,7 +306,25 @@ main {
   background-color: var(--accent1-color);
   color: var(--accent2-color);
   height: 50px;
-  margin: 15px 0 5px 0;
+  margin: 25px 0 5px 0;
   border-radius: 5px;
   font-size: 1.5rem;
+  width: 350px;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* .map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+iframe {
+  border: 2px solid var(--primary-color);
+}
+
+.address {
+  top: -50px;
 }
