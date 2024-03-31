@@ -328,3 +328,20 @@ iframe {
 .address {
   top: -50px;
 }
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.general {
+  /* top: -15px; */
+  align-self: center;
+}
+.radio-btn {
+  align-self: center;
+}
+.radio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
