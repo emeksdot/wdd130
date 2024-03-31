@@ -242,7 +242,7 @@ form {
   align-self: center;
   background-color: rgb(247, 244, 244);
   border-radius: 3px;
-  height: 420px;
+  height: 450px;
   justify-items: flex-start;
 }
 
@@ -344,4 +344,22 @@ iframe {
 .radio-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+.radio-check {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.radio-check input {
+  /* align-self: flex-start; */
+  justify-content: flex-start;
+  left: -50px;
+}
+.check-btn {
+  align-self: center;
+  justify-content: start;
+}
+.subscription {
+  left: -150px;
+  /* font-size: 0.5rem; */
 }

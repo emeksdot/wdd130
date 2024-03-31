@@ -51,12 +51,8 @@
           <div class="right">
             <form>
               <div class="wrapper form-container-1">
-                <label for="first">First Name:</label>
+                <label for="first">Your name:</label>
                 <input type="text" id="first" name="first" />
-              </div>
-              <div class="wrapper form-container-2">
-                <label for="last">Last Name:</label>
-                <input type="text" id="last" name="last" />
               </div>
               <fieldset>
                 <legend><p>Please select your purpose of inquiry:</p></legend>
@@ -90,9 +86,22 @@
                   </div>
                 </div>
               </fieldset>
-              <div class="wrapper form-container-5">
-                <label for="info">What would you like to discuss?</label
-                ><textarea name="info" id="info" cols="45" rows="6"></textarea>
+              <fieldset>
+                <legend><p>What would you like to discuss?</p></legend>
+                <div class="wrapper form-container-5">
+                  <textarea name="info" id="info" cols="45" rows="6"></textarea>
+                </div>
+              </fieldset>
+              <div class="radio-check">
+                <input
+                  class="check-btn"
+                  type="checkbox"
+                  id="subscription"
+                  name="subscription"
+                />
+                <label class="subscription" for="subscription">
+                  Please subscribe me to the monthly newsletter</label
+                >
               </div>
               <button type="submit" class="btn-submit">Submit Info</button>
             </form>
