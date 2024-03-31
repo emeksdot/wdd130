@@ -19,8 +19,10 @@ body {
   /* display: flex; */
   /* flex-direction: column; */
   display: grid;
-  grid-template-rows: 0.17fr 0.29fr 0.23fr 0.23fr 0.09fr;
+  /* grid-template-rows: 0.17fr 0.29fr 0.23fr 0.23fr 0.09fr; */
+  grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
   grid-template-columns: 100%;
+  height: 768px;
   /* height: 100vh; */
   /* background-color: var(--accent2-color); */
 }
@@ -52,6 +54,9 @@ header nav a {
 
 div {
   position: relative;
+}
+header nav {
+  height: 100%;
 }
 
 .hero img {
@@ -86,6 +91,7 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  /* height: 60px; */
 }
 
 header img {
@@ -99,12 +105,17 @@ nav {
   justify-self: center;
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav a {
   margin-left: 25px;
   border: 1px solid var(--primary-color);
   padding: 5px 25px;
+  justify-self: center;
+  align-self: center;
 }
 
 header nav a:hover {
@@ -194,4 +205,99 @@ footer a img {
 
 footer p {
   color: var(--primary-color);
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box h1 {
+  position: relative;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-box h2,
+p {
+  justify-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid goldenrod;
+  padding: 40px 20px;
+  align-content: center;
+  align-self: center;
+  background-color: rgb(247, 244, 244);
+  border-radius: 3px;
+  height: 350px;
+  justify-items: flex-start;
+}
+
+.form-container-1 {
+  display: flex;
+  justify-content: center;
+}
+.form-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.form-container-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.form-container-1 input {
+  margin-left: 15px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.form-container-2 input {
+  margin-left: 15px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.wrapper input {
+  margin-left: 15px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.form-container-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container-5 label {
+  align-self: flex-start;
+  margin-left: 35px;
+}
+label {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1.15rem;
+}
+main {
+  height: 50%;
+}
+
+.btn-submit {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  height: 50px;
+  margin: 15px 0 5px 0;
+  border-radius: 5px;
+  font-size: 1.5rem;
 }

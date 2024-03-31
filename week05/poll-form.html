@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll Form</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="fullname"></label>
+          <input id="fullname" type="text" name="fullname" />
+          <label for="useremail"></label>
+          <input id="useremail" name="useremail" type="text" />
+        </fieldset>
+        <fieldset>
+          <legend>Questions</legend>
+          <label for="browser">What is your favorite browser</label>
+          <select name="browser" id="browser">
+            <option value="safari">Safari</option>
+            <option value="chrome">Chrome</option>
+            <option value="firefox">FireFox</option>
+            <option value="edge">Edge</option>
+            <option value="opera">Opera</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="pet">Do you have a household pet?</label>
+          <input type="checkbox" id="pet" name="pet" />
+          <label for="feedback"></label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <button type="submit">Submit Poll</button>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
