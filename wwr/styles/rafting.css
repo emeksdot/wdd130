@@ -314,12 +314,13 @@ main {
   cursor: pointer;
 }
 
-/* .map-container {
+.map-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+  width: 100%;
+}
 
 iframe {
   border: 2px solid var(--primary-color);
