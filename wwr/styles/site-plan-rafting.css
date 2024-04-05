@@ -45,6 +45,7 @@ nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+  justify-content: space-between;
 }
 
 nav a {
@@ -54,10 +55,12 @@ nav a {
 
 nav a:link {
   color: var(--primary-color);
+  background-color: aqua;
 }
 
 nav a:visited {
   color: var(--accent1-color);
+  background-color: orange;
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
