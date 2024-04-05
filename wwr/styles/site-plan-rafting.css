@@ -5,6 +5,7 @@
   --secondary-color: #caa8f5;
   --accent1-color: #e45;
   --accent2-color: #fdcbd8;
+  --accent3-color: black;
 
   --paragraph-font: "Lato", sans-serif;
   --heading-font: "Montserrat", sans-serif;
@@ -44,4 +45,21 @@ nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+}
+
+nav a {
+  background-color: var(--nav-background-color);
+  color: var(--primary-color);
+}
+
+nav a:link {
+  color: var(--primary-color);
+}
+
+nav a:visited {
+  color: var(--accent1-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--accent3-color);
 }
