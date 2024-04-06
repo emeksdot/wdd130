@@ -65,6 +65,13 @@ header nav {
   width: 100%;
 }
 
+header,
+footer,
+.grid {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
 article {
   position: absolute;
   top: 150px;
