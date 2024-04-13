@@ -3,7 +3,7 @@
 :root {
   --primary-color: #592e83;
   --secondary-color: #caa8f5;
-  --accent1-color: #e45;
+  --accent1-color: #ee4455;
   --accent2-color: #fdcbd8;
 
   --paragraph-font: "Lato", sans-serif;
@@ -15,16 +15,15 @@
   --nav-hover-link-color: #fdcbd8;
 }
 
-body {
-  /* display: flex; */
-  /* flex-direction: column; */
+.container {
   display: grid;
-  /* grid-template-rows: 0.17fr 0.29fr 0.23fr 0.23fr 0.09fr; */
-  grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+  grid-template-rows: 2fr 10fr 1fr;
   grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   height: 768px;
-  /* height: 100vh; */
-  /* background-color: var(--accent2-color); */
 }
 
 h1 {
@@ -69,7 +68,8 @@ header,
 footer,
 .grid {
   margin: 0 auto;
-  max-width: 840px;
+  /* max-width: 840px; */
+  width: 100%;
 }
 
 article {
@@ -95,10 +95,17 @@ header {
   display: grid;
   margin: 1em auto;
   justify-content: space-around;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 2fr; */
   align-items: center;
   justify-content: center;
   /* height: 60px; */
+  grid-area: header;
+  border: 1px solid black;
+  background-color: #f3e2e2;
+  /* justify-content: center; */
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
 }
 
 header img {
@@ -107,13 +114,17 @@ header img {
 }
 
 nav {
-  grid-column: 2/3;
+  /* grid-column: 2/3; */
   /* justify-content: flex-end; */
   justify-self: center;
   display: flex;
-  justify-content: space-between;
   height: 100%;
   justify-content: center;
+  align-items: center;
+  /*  */
+  display: flex;
+  grid-column: 2/4;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -124,14 +135,71 @@ header nav a {
   justify-self: center;
   align-self: center;
 }
+.logo {
+  height: 150px;
+  width: 200px;
+}
 
 header nav a:hover {
   background-color: var(--nav-background-color);
   color: var(--nav-hover-background-color);
 }
+.container .home-container {
+  height: 150px;
+}
 
-main {
+.main-container {
+  position: relative;
   background-color: var(--accent2-color);
+}
+img {
+  width: 100%;
+}
+
+body .main-container .main-btn {
+  position: absolute;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  right: 200px;
+  top: 200px;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+}
+body .main-container .main-btn a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  border-radius: 10px;
+}
+.main-first {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.main-first img {
+  width: 75%;
+}
+.main-third {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  height: 350px;
+}
+.main-third img {
+  grid-column: 1/8;
+  grid-row: 2/6;
+  /* width: 500px; */
+  height: 250px;
+}
+.main-third form {
+  grid-column: 7/13;
+  grid-row: 1/6;
+}
+.main-third img {
+}
+.main-form {
+  height: 50%;
 }
 
 .hero {
@@ -186,7 +254,6 @@ main {
 .adventure-pics {
   display: flex;
   justify-content: space-around;
-  /* height: 100px; */
 }
 
 .adventure-pics figure img {
@@ -370,4 +437,32 @@ iframe {
 .subscription {
   left: -150px;
   /* font-size: 0.5rem; */
+}
+
+/* Trips Page */
+
+table {
+  margin-top: 20px;
+}
+
+td {
+  border: 1px solid red;
+  height: auto;
+  width: 640px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.trips h1 {
+  position: relative;
+}
+
+a.button {
+  padding: 5px 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+  text-decoration: none;
+  margin-bottom: 50px;
 }
